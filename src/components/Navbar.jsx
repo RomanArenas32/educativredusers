@@ -4,14 +4,15 @@ import logo from "../assets/Logo.png";
 export const Navbar = () => {
 
   const [datos, setDatos] = useState(false);
-  console.log(datos)
+
   const changeVisible = ()=>{
     setDatos(!datos)
   }
 
   return (
-    <nav className="flex flex-wrap items-center justify-between bg-gray-900 p-4">
-      <img src={logo} alt="logo redUsers" className="h-10" />
+    <nav className=" items-center  bg-gray-900 p-4">
+    <div className="flex flex-row  items-center justify-between w-full top-0" >
+     <img src={logo} alt="logo redUsers" className="h-10" />
       <button className="block lg:hidden border border-gray-200 p-2 rounded-md text-gray-200 hover:text-white focus:outline-none focus:text-white"
       onClick={changeVisible}
       >
@@ -19,9 +20,10 @@ export const Navbar = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
+    </div>
+    <div>
       {/* Lista de enlaces */}
-      <ul className={(datos) ? "hidden" : "lg:flex lg:space-x-4"}>
-
+      <ul className={(datos) ? "flex flex-col gap-9 h-screen justify-center items-center animate-fadeIn" : "hidden lg:flex lg:space-x-4 justify-end" } >
         <li>
           <a href="/" className="text-white hover:text-gray-300">
             inicio
@@ -43,6 +45,8 @@ export const Navbar = () => {
           </a>
         </li>
       </ul>
+    </div>
+   
     </nav>
   );
 };
