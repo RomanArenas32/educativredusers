@@ -43,16 +43,16 @@ export const Navbar = () => {
           }
         >
           <Link to="/" onClick={()=> setDatos(false)}>
-            <a className="text-white hover:text-gray-300">inicio</a>
+            <li className="text-white hover:text-gray-300">inicio</li>
           </Link>
           <Link to="/somos" onClick={()=> setDatos(false)}>
-            <a className="text-white hover:text-gray-300">quienes somos</a>
+            <li className="text-white hover:text-gray-300">quienes somos</li>
           </Link>
           <Link to="/ofrecemos" onClick={()=> setDatos(false)}>
-            <a className="text-white hover:text-gray-300">que ofrecemos</a>
+            <li className="text-white hover:text-gray-300">que ofrecemos</li>
           </Link>
           <Link to="/llegar" onClick={()=> setDatos(false)}>
-            <a className="text-white hover:text-gray-300">como llegar</a>
+            <li className="text-white hover:text-gray-300">como llegar</li>
           </Link>
         </ul>
       </div>

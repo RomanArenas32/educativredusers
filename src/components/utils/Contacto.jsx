@@ -4,7 +4,7 @@ export const Contacto = () => {
   return (
     <div className="p-4">
       <h1 className="text-xl font-bold mb-2">Formulario de Contacto</h1>
-      <form className="max-w-sm"> {/* Reducir el ancho del formulario */}
+      <form className="max-w-sm"> 
         <label htmlFor="nombre" className="block mb-1">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required className="w-full px-3 py-1 mb-1 border rounded" />
         
