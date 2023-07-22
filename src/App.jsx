@@ -1,13 +1,13 @@
 import { AppRoutes } from "./routes/AppRoutes";
 import { Navbar, Footer } from "./components";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 
 export const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <AppRoutes />
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
