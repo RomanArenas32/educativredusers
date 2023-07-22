@@ -1,7 +1,9 @@
-
+import { Contacto } from "../components/utils";
 
 export const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <Contacto />
+    </>
+  );
+};

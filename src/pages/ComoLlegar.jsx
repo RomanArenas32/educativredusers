@@ -1,6 +1,10 @@
+import { Contacto } from "../components/utils";
 
 export const ComoLlegar = () => {
   return (
-    <div>ComoLlegar</div>
-  )
-}
+    <>
+      <Contacto />
+    </>
+  );
+};
+s
