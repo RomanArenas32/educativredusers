@@ -42,16 +42,16 @@ export const Navbar = () => {
               : "hidden lg:flex lg:space-x-4 justify-end"
           }
         >
-          <Link to="/">
+          <Link to="/" onClick={()=> setDatos(false)}>
             <a className="text-white hover:text-gray-300">inicio</a>
           </Link>
-          <Link to="/somos">
+          <Link to="/somos" onClick={()=> setDatos(false)}>
             <a className="text-white hover:text-gray-300">quienes somos</a>
           </Link>
-          <Link to="/ofrecemos">
+          <Link to="/ofrecemos" onClick={()=> setDatos(false)}>
             <a className="text-white hover:text-gray-300">que ofrecemos</a>
           </Link>
-          <Link to="/llegar">
+          <Link to="/llegar" onClick={()=> setDatos(false)}>
             <a className="text-white hover:text-gray-300">como llegar</a>
           </Link>
         </ul>
