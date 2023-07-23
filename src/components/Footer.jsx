@@ -3,7 +3,7 @@ import logo from '../assets/Logo.png';
 
 export const Footer = () => {
   return (
-    <footer className="flex items-center justify-between bg-gray-900 p-4 fixed bottom-0 w-full">
+    <footer className="flex items-center justify-between bg-gray-900 p-4  bottom-0 w-full">
       <img src={logo} alt="logo redUsers" className="h-10" />
       <ul className="flex space-x-4">
         <li>
